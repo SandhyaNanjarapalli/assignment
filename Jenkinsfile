@@ -7,7 +7,7 @@ pipeline {
          stages {
          stage ('git clone') {
             steps {
-                git  '' 
+                git  'https://github.com/SandhyaNanjarapalli/assignment.git' 
             }
          }
           stage ('compile') {
