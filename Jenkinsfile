@@ -5,11 +5,7 @@ pipeline {
 
     }
          stages {
-         stage ('git clone') {
-            steps {
-                git  'https://github.com/Nikita130520/maven-project.git' 
-            }
-         }
+         
           stage ('compile') {
             steps {
                 sh "mvn compile" 
