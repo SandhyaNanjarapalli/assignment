@@ -5,11 +5,7 @@ pipeline {
 
     }
          stages {
-         stage ('git clone') {
-            steps {
-                git  'https://github.com/SandhyaNanjarapalli/assignment.git' 
-            }
-         }
+         
           stage ('compile') {
             steps {
                 sh "mvn compile" 
